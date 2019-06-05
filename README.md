@@ -25,6 +25,10 @@ day = [
 	"Воскресенье"
 ]
 
-# output according to the array day of the week
+# output at result
 
-print "#{greeting.sample} #{day[week_day - 1]}."
+if week_day <= 4
+	puts "#{greeting.sample} #{day[week_day - 1]} - будний день. Эх... за работу!"
+else
+	puts "#{greeting.sample} #{day[week_day - 1]} - выходной!!! Ура-аааа!!!"
+end
